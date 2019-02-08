@@ -40,15 +40,8 @@ for loc in map(lambda s: parse_locale(s), args.locale) if args.locale \
         project='gettext-CLDR-translations', version='1.0',
         copyright_holder='Tomasz Słodkowicz')
     for c in sorted(locale.currencies):
-        symbol = locale.currency_symbols.get(c, c)
-        if symbol == c:
-            symbol = C.currency_symbols.get(c, c)
-        if symbol == c:
-            symbol = ''
-        else:
-            symbol = 'symbol: %s' % symbol
         catalog.add(C.currencies[c], locale.currencies[c],
-            auto_comments=[c], user_comments=[symbol])
+            auto_comments=[c])
 
     subdir = get_locale_identifier(loc)
     if args.po:
