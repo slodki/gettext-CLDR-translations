@@ -1,0 +1,24 @@
+---
+engines:
+  bandit:
+    enabled: true
+  flawfinder:
+    nabled: true
+  hadolint:
+    enabled: true
+  jackson-linter:
+    enabled: true
+  jshint:
+    enabled: true
+  pmd:
+    enabled: true
+  prospector:
+    enabled: true
+  pylint:
+    enabled: true
+  stylelint:
+    enabled: true
+  duplication:
+    enabled: true
+  metrics:
+    enabled: true
