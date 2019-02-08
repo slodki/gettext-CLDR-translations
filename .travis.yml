@@ -1,4 +1,4 @@
 dist: xenial
 language: python
 python: 3.7
-script: ./currencies.py -p -m
+script: ./currencies.py -p -s
